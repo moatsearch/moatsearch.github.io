@@ -1,0 +1,331 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 20px;
+    background-color: #121212; /* Dark mode background */
+    color: #e0e0e0; /* Light text color for dark mode */
+    line-height: 1.6; /* Improve readability */
+    max-width: 1200px; /* Limit content width for readability */
+    margin: 0 auto; /* Center body content */
+    padding: 20px;
+}
+
+/* Main Title */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5em; /* Larger and more prominent title */
+    margin-bottom: 30px;
+}
+
+/* Title */
+.title {
+    font-size: 1.8em; /* Slightly larger title */
+    margin-bottom: 15px;
+}
+
+.title a {
+    text-decoration: none;
+    color: #4a90e2; /* Distinct link color */
+}
+
+.title a:hover {
+    text-decoration: underline;
+}
+
+/* Abstract */
+.abstract {
+    font-size: 1.1em; /* Slightly larger font */
+    color: #b0b0b0;
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+.dark-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.dark-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Focus and Active State */
+.dark-button:active {
+    background-color: #222;
+    transform: scale(0.95);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article {
+        width: 100%; /* Full width on small screens */
+        max-width: 100%;
+    }
+
+    button.update-button {
+        width: 100%; /* Full width buttons on mobile */
+        padding: 12px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    border-bottom: 2px solid #555;
+    height: 60px;
+}
+
+.header a {
+    color: #b0b0b0; /* Muted grey for normal link */
+    text-decoration: none; /* Remove underline by default */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.header a:hover {
+    color: #e0e0e0; /* Lighter grey on hover */
+}
+
+/* Left section (MOAT) */
+.header-left {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #f1f1f1;
+}
+
+/* Center section (ArXiv) */
+.header-center {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Optional: Additional spacing for center text */
+.header-center span {
+    display: inline-block;
+    margin-left: -60px;
+}
+
+/* Empty right section (if needed for future buttons or links) */
+.header-right {
+    width: 60px; /* Just for spacing; you can add buttons/links here later */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove default spacing between table cells */
+    margin: 25px 0;
+    font-size: 1.2em;
+    background-color: #1e1e1e; /* Dark background for table */
+    color: #e0e0e0; /* Light text color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+}
+
+table a {
+    color: #b0b0b0; /* Muted grey for normal link */
+    text-decoration: none; /* Remove underline by default */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+table a:hover {
+    color: #e0e0e0; /* Lighter grey on hover */
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Table Header */
+thead th {
+    background-color: #333; /* Darker header background */
+    color: #ffffff; /* Light text for header */
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Table Body Rows */
+tbody tr {
+    border-bottom: 1px solid #444; /* Subtle border between rows */
+}
+
+tbody tr:last-of-type {
+    border-bottom: none; /* Remove bottom border for last row */
+}
+
+/* Table Cells */
+td {
+    padding: 12px 15px;
+    font-size: 1em;
+    color: #b0b0b0; /* Light gray for body text */
+}
+
+/* Hover Effect for Rows */
+tbody tr:hover {
+    background-color: #2c2c2c; /* Slightly lighter background on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 1em;
+    }
+
+    thead {
+        display: none; /* Hide table header for small screens */
+    }
+
+    tbody tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    tbody td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    tbody td::before {
+        content: attr(data-label); /* Add data-label for each cell */
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #e0e0e0;
+    }
+}
+
+.navigation-container {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #555;
+    padding: 5px 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 5px auto;
+    max-width: 75%;
+}
+
+.link-description {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 5px;
+}
+
+#graph-container {
+    flex: 1;
+    min-width: 600px;
+    height: 500px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+}
+
+.panel {
+    flex: 1;
+    min-width: 300px;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel h3 {
+    margin-top: 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button:disabled {
+    background-color: #0056b3;
+    cursor: not-allowed;
+}
+
+#fileInput {
+    margin-top: 10px;
+}
+
+.sentiment-bar {
+    display: flex;
+    height: 10px;
+    border: 1px solid #000; /* Optional border */
+}
+
+.positive {
+    background-color: green;
+}
+
+.neutral {
+    background-color: grey;
+}
+
+.negative {
+    background-color: red;
+}
