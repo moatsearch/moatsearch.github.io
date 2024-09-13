@@ -64,6 +64,11 @@ h1 {
     transform: scale(0.95);
 }
 
+.dark-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
     .container {
