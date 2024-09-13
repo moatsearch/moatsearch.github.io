@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 <header class="header">
     <div class="header-left">
-        <a href="index.html">MOAT</a>
+        <a href="{{ url_for('index') }}">MOAT</a>
     </div>
     <div class="header-center">
         <span>News</span>
     </div>
     <div class="header-right"></div>
 </header>
-<thead>
 <table id="news_table">
-    <tr style="text-align: left;">
+<thead>
+    <tr>
+        <th>Publisher</th>
         <th>Article</th>
         <th>Sentiment</th>
+        <th>Publisher</th>
         <th>Article</th>
         <th>Sentiment</th>
     </tr>
@@ -28,457 +30,148 @@
 <tbody>
 
     <tr>
-      <td><a href="https://www.thefp.com/p/can-woman-be-drag-queen">Can a Woman Be a Drag Queen?</a></td>
+      <td>Slow Boring</td>
+      <td><a href="https://www.slowboring.com/p/sixteen-thoughts-on-a-great-debate">Sixteen thoughts on a great debate</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 83.0%;"></div>
-            <div class="neutral" style="width: 16.2%;"></div>
-            <div class="negative" style="width: 0.8%;"></div>
+            <div class="positive" style="width: 83.1%;"></div>
+            <div class="neutral" style="width: 15.6%;"></div>
+            <div class="negative" style="width: 1.3%;"></div>
         </div>       
       </td>
-      <td><a href="https://www.konstantinkisin.com/p/dont-believe-your-lying-eyes-bigot">Dont Believe Your Lying Eyes, Bigot!</a></td>
+      <td>Restoration, with Ayaan Hirsi Ali</td>
+      <td><a href="https://www.restorationbulletin.com/p/abc-presidential-debate-part-i">ABC Presidential Debate: Part I</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 1.0%;"></div>
-            <div class="neutral" style="width: 15.1%;"></div>
-            <div class="negative" style="width: 83.9%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://www.natesilver.net/p/the-mistakes-of-2019-could-cost-harris">The mistakes of 2019 could cost Harris the election</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 84.2%;"></div>
-            <div class="neutral" style="width: 15.4%;"></div>
-            <div class="negative" style="width: 0.5%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://www.thefp.com/p/trump-took-the-bait-harris-kept-her">Trump Took the Bait. Harris Kept Her Cool.</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.7%;"></div>
-            <div class="neutral" style="width: 18.1%;"></div>
-            <div class="negative" style="width: 80.2%;"></div>
+            <div class="positive" style="width: 1.6%;"></div>
+            <div class="neutral" style="width: 25.7%;"></div>
+            <div class="negative" style="width: 72.7%;"></div>
         </div>       
       </td>
     </tr>
 
     <tr>
-      <td><a href="https://www.thefp.com/p/trump-took-the-bait-harris-kept-her">Trump Took the Bait. Harris Kept Her Cool.</a></td>
+      <td>Very Serious</td>
+      <td><a href="https://www.joshbarro.com/p/this-is-the-best-possible-way-for">This Is the Best Possible Way for Kamala Harris to Launch a Run for President</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 1.7%;"></div>
-            <div class="neutral" style="width: 18.1%;"></div>
-            <div class="negative" style="width: 80.2%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://www.slowboring.com/p/concepts-of-a-plan">Concepts of a plan</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 79.9%;"></div>
-            <div class="neutral" style="width: 19.7%;"></div>
+            <div class="positive" style="width: 86.9%;"></div>
+            <div class="neutral" style="width: 12.7%;"></div>
             <div class="negative" style="width: 0.4%;"></div>
         </div>       
       </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://www.natesilver.net/p/kamala-harris-got-the-debate-she">Kamala Harris got the debate she wanted</a></td>
+      <td>Ryan Grim</td>
+      <td><a href="https://ryangrim.substack.com/p/kamala-harris-needs-an-open-convention">Kamala Harris needs an open convention if she's going to beat Trump</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 79.2%;"></div>
-            <div class="neutral" style="width: 20.4%;"></div>
-            <div class="negative" style="width: 0.4%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://www.thefp.com/p/trump-took-the-bait-harris-kept-her">Trump Took the Bait. Harris Kept Her Cool.</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.7%;"></div>
-            <div class="neutral" style="width: 18.1%;"></div>
-            <div class="negative" style="width: 80.2%;"></div>
+            <div class="positive" style="width: 3.4%;"></div>
+            <div class="neutral" style="width: 29.2%;"></div>
+            <div class="negative" style="width: 67.4%;"></div>
         </div>       
       </td>
     </tr>
 
     <tr>
-      <td><a href="https://iandunt.substack.com/p/election-2024-this-could-be-the-birth">Election 2024: This could be the birth of a powerful new electoral reform movement</a></td>
+      <td>Joel Bowman - Notes from the End of the World</td>
+      <td><a href="https://joelbowman.substack.com/p/a-pox-on-roses-too-ee5">A Pox on Roses, Too</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 2.6%;"></div>
-            <div class="neutral" style="width: 43.2%;"></div>
-            <div class="negative" style="width: 54.2%;"></div>
+            <div class="positive" style="width: 5.3%;"></div>
+            <div class="neutral" style="width: 35.3%;"></div>
+            <div class="negative" style="width: 59.4%;"></div>
         </div>       
       </td>
-      <td><a href="https://iandunt.substack.com/p/election-2024-a-new-day-has-broken">Election 2024: A new day has broken in the most beautiful of all possible worlds</a></td>
+      <td>Joel Bowman - Notes from the End of the World</td>
+      <td><a href="https://joelbowman.substack.com/p/rational-anarchy">Rational Anarchy</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 90.4%;"></div>
-            <div class="neutral" style="width: 6.3%;"></div>
-            <div class="negative" style="width: 3.3%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://www.thefp.com/p/nebraska-walzs-for-trump-kat-rosenfield">We Are All Walzs for Trump</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 84.5%;"></div>
-            <div class="neutral" style="width: 13.2%;"></div>
-            <div class="negative" style="width: 2.3%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://alexandervindman.substack.com/p/back-in-trumps-crosshairs">Back in Trumps Crosshairs</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.3%;"></div>
-            <div class="neutral" style="width: 33.6%;"></div>
-            <div class="negative" style="width: 65.2%;"></div>
+            <div class="positive" style="width: 91.3%;"></div>
+            <div class="neutral" style="width: 8.4%;"></div>
+            <div class="negative" style="width: 0.3%;"></div>
         </div>       
       </td>
     </tr>
 
     <tr>
-      <td><a href="https://www.natesilver.net/p/could-kamala-harris-really-win-north">Could Kamala Harris really win North Carolina  and lose Georgia?</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 70.0%;"></div>
-            <div class="neutral" style="width: 29.5%;"></div>
-            <div class="negative" style="width: 0.5%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://www.thefp.com/p/trump-took-the-bait-harris-kept-her">Trump Took the Bait. Harris Kept Her Cool.</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.7%;"></div>
-            <div class="neutral" style="width: 18.1%;"></div>
-            <div class="negative" style="width: 80.2%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://www.natesilver.net/p/how-big-will-the-bounce-be">How big will the bounce be?</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 70.1%;"></div>
-            <div class="neutral" style="width: 29.1%;"></div>
-            <div class="negative" style="width: 0.8%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://www.thefp.com/p/trump-took-the-bait-harris-kept-her">Trump Took the Bait. Harris Kept Her Cool.</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.7%;"></div>
-            <div class="neutral" style="width: 18.1%;"></div>
-            <div class="negative" style="width: 80.2%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://www.natesilver.net/p/theres-no-normal-in-this-election">Theres no normal in this election</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 59.2%;"></div>
-            <div class="neutral" style="width: 40.1%;"></div>
-            <div class="negative" style="width: 0.7%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://www.thefp.com/p/trump-took-the-bait-harris-kept-her">Trump Took the Bait. Harris Kept Her Cool.</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.7%;"></div>
-            <div class="neutral" style="width: 18.1%;"></div>
-            <div class="negative" style="width: 80.2%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://www.natesilver.net/p/can-kamala-harris-win-in-incumbent">Can Kamala Harris win in Incumbent Mode?</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.9%;"></div>
-            <div class="neutral" style="width: 43.3%;"></div>
-            <div class="negative" style="width: 54.8%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://www.slowboring.com/p/concepts-of-a-plan">Concepts of a plan</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 79.9%;"></div>
-            <div class="neutral" style="width: 19.7%;"></div>
-            <div class="negative" style="width: 0.4%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://www.natesilver.net/p/kamala-harris-got-the-debate-she">Kamala Harris got the debate she wanted</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 79.2%;"></div>
-            <div class="neutral" style="width: 20.4%;"></div>
-            <div class="negative" style="width: 0.4%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://www.natesilver.net/p/can-kamala-harris-win-in-incumbent">Can Kamala Harris win in Incumbent Mode?</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.9%;"></div>
-            <div class="neutral" style="width: 43.3%;"></div>
-            <div class="negative" style="width: 54.8%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://www.thefp.com/p/bill-barr-mob-rule-and-moral-bankruptcy-at-columbia">Bill Barr: Mob Rule and Moral Bankruptcy at Columbia</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 2.3%;"></div>
-            <div class="neutral" style="width: 41.6%;"></div>
-            <div class="negative" style="width: 56.1%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://melaniephillips.substack.com/p/art-and-antisemitism">Art and antisemitism</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 72.0%;"></div>
-            <div class="neutral" style="width: 27.4%;"></div>
-            <div class="negative" style="width: 0.6%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
+      <td>Tel Aviv Diary</td>
       <td><a href="https://marcschulman.substack.com/p/day-326-of-the-war-hostage-rescued">DAY 326 OF THE WAR: Hostage Rescued From Gaza, Commemoration of Oct 7, Quiet Day on Northern Border</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 56.9%;"></div>
-            <div class="neutral" style="width: 28.2%;"></div>
-            <div class="negative" style="width: 14.9%;"></div>
+            <div class="positive" style="width: 44.4%;"></div>
+            <div class="neutral" style="width: 49.1%;"></div>
+            <div class="negative" style="width: 6.5%;"></div>
         </div>       
       </td>
+      <td>Tel Aviv Diary</td>
       <td><a href="https://marcschulman.substack.com/p/day-321-of-the-war-soldier-killed">DAY 321 OF THE WAR: Soldier Killed In Gaza, Over 46,000 Acres Burned in North, Head of GSS Sounds the Alarm, Fake News Spreading, Hostage Family at DNC</a></td>
       <td>
         <div class="sentiment-bar">
             <div class="positive" style="width: 0.6%;"></div>
-            <div class="neutral" style="width: 15.5%;"></div>
-            <div class="negative" style="width: 83.9%;"></div>
+            <div class="neutral" style="width: 17.2%;"></div>
+            <div class="negative" style="width: 82.2%;"></div>
         </div>       
       </td>
     </tr>
 
     <tr>
-      <td><a href="https://marcschulman.substack.com/p/day-340-of-the-war-idf-actions-in">DAY 340 OF THE WAR: IDF Actions in Gaza and the North, Father of Hostage Berates Netanyahu, Israeli VC Funds Raise the Lowest New Capital Since 2015</a></td>
+      <td>The Free Press</td>
+      <td><a href="https://www.thefp.com/p/why-are-grocery-bills-so-high">Why Are Grocery Bills So High?</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 0.6%;"></div>
-            <div class="neutral" style="width: 16.0%;"></div>
-            <div class="negative" style="width: 83.4%;"></div>
+            <div class="positive" style="width: 2.8%;"></div>
+            <div class="neutral" style="width: 49.5%;"></div>
+            <div class="negative" style="width: 47.7%;"></div>
         </div>       
       </td>
-      <td><a href="https://marcschulman.substack.com/p/day-326-of-the-war-hostage-rescued">DAY 326 OF THE WAR: Hostage Rescued From Gaza, Commemoration of Oct 7, Quiet Day on Northern Border</a></td>
+      <td>Very Serious</td>
+      <td><a href="https://www.joshbarro.com/p/i-said-democrats-should-pander-more">I Said Democrats Should Pander More, and Kamala Is Delivering</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 56.9%;"></div>
-            <div class="neutral" style="width: 28.2%;"></div>
-            <div class="negative" style="width: 14.9%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://www.natesilver.net/p/could-kamala-harris-really-win-north">Could Kamala Harris really win North Carolina  and lose Georgia?</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 70.0%;"></div>
-            <div class="neutral" style="width: 29.5%;"></div>
-            <div class="negative" style="width: 0.5%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://www.natesilver.net/p/can-kamala-harris-win-in-incumbent">Can Kamala Harris win in Incumbent Mode?</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.9%;"></div>
-            <div class="neutral" style="width: 43.3%;"></div>
-            <div class="negative" style="width: 54.8%;"></div>
+            <div class="positive" style="width: 65.8%;"></div>
+            <div class="neutral" style="width: 31.0%;"></div>
+            <div class="negative" style="width: 3.2%;"></div>
         </div>       
       </td>
     </tr>
 
     <tr>
-      <td><a href="https://marcschulman.substack.com/p/day-326-of-the-war-hostage-rescued">DAY 326 OF THE WAR: Hostage Rescued From Gaza, Commemoration of Oct 7, Quiet Day on Northern Border</a></td>
+      <td>Michael Moore</td>
+      <td><a href="https://www.michaelmoore.com/p/i-asked-you-delivered-here-are-your">I Asked. You Delivered. Here Are Your Kamala Yard Signs!</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 56.9%;"></div>
-            <div class="neutral" style="width: 28.2%;"></div>
-            <div class="negative" style="width: 14.9%;"></div>
+            <div class="positive" style="width: 51.1%;"></div>
+            <div class="neutral" style="width: 47.2%;"></div>
+            <div class="negative" style="width: 1.7%;"></div>
         </div>       
       </td>
-      <td><a href="https://marcschulman.substack.com/p/day-323-of-the-war-four-soldiers">DAY 323 OF THE WAR: Four Soldiers Killed Fighting in Gaza, Heavy Exchanges in the North, More Jewish Terror, Houthis Sink an Oil Tanker, Synagogue Attacked in France</a></td>
+      <td>Michael Moore</td>
+      <td><a href="https://www.michaelmoore.com/p/kamala-and-coach">"Kamala and Coach"</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 0.9%;"></div>
-            <div class="neutral" style="width: 17.8%;"></div>
-            <div class="negative" style="width: 81.3%;"></div>
+            <div class="positive" style="width: 88.6%;"></div>
+            <div class="neutral" style="width: 11.1%;"></div>
+            <div class="negative" style="width: 0.3%;"></div>
         </div>       
       </td>
     </tr>
 
     <tr>
-      <td><a href="https://marcschulman.substack.com/p/revised-day-340-of-the-war-idf-actions">REVISED DAY 340 OF THE WAR: IDF Actions in Gaza and the North, Father of Hostage Berates Netanyahu, Israeli VC Funds Raise the Lowest New Capital Since 2015</a></td>
+      <td>Striking 13</td>
+      <td><a href="https://iandunt.substack.com/p/14-years-of-tory-rule">14 years of Tory rule</a></td>
       <td>
         <div class="sentiment-bar">
             <div class="positive" style="width: 0.8%;"></div>
-            <div class="neutral" style="width: 18.3%;"></div>
-            <div class="negative" style="width: 81.0%;"></div>
+            <div class="neutral" style="width: 5.6%;"></div>
+            <div class="negative" style="width: 93.7%;"></div>
         </div>       
       </td>
-      <td><a href="https://marcschulman.substack.com/p/day-326-of-the-war-hostage-rescued">DAY 326 OF THE WAR: Hostage Rescued From Gaza, Commemoration of Oct 7, Quiet Day on Northern Border</a></td>
+      <td>Striking 13</td>
+      <td><a href="https://iandunt.substack.com/p/the-last-tory-stitch-up">The last Tory stitch-up</a></td>
       <td>
         <div class="sentiment-bar">
-            <div class="positive" style="width: 56.9%;"></div>
-            <div class="neutral" style="width: 28.2%;"></div>
-            <div class="negative" style="width: 14.9%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://danperry.substack.com/p/a-meditation-on-mendacity">A meditation on mendacity</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.8%;"></div>
-            <div class="neutral" style="width: 38.4%;"></div>
-            <div class="negative" style="width: 59.8%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://melaniephillips.substack.com/p/netanyahus-hour">Netanyahus hour</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 66.0%;"></div>
-            <div class="neutral" style="width: 31.8%;"></div>
-            <div class="negative" style="width: 2.2%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://marcschulman.substack.com/p/day-326-of-the-war-hostage-rescued">DAY 326 OF THE WAR: Hostage Rescued From Gaza, Commemoration of Oct 7, Quiet Day on Northern Border</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 56.9%;"></div>
-            <div class="neutral" style="width: 28.2%;"></div>
-            <div class="negative" style="width: 14.9%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://marcschulman.substack.com/p/day-325-of-the-war-the-day-after">DAY 325 OF THE WAR The Day After Hezbollahs Failed Attack, Ben-Gvir At It Again, Stalled Hostage Talks, Banned Palestinian Workers</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 0.8%;"></div>
-            <div class="neutral" style="width: 20.3%;"></div>
-            <div class="negative" style="width: 78.9%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://marcschulman.substack.com/p/day-335-of-the-war-additional-barrages">DAY 335 OF THE WAR: Additional Barrages From North, Army Acts in West Bank, Hostage Negotiations In Doubt, Terror in Germany</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 0.9%;"></div>
-            <div class="neutral" style="width: 22.2%;"></div>
-            <div class="negative" style="width: 77.0%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://marcschulman.substack.com/p/day-326-of-the-war-hostage-rescued">DAY 326 OF THE WAR: Hostage Rescued From Gaza, Commemoration of Oct 7, Quiet Day on Northern Border</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 56.9%;"></div>
-            <div class="neutral" style="width: 28.2%;"></div>
-            <div class="negative" style="width: 14.9%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://marcschulman.substack.com/p/day-327-of-the-war-two-soldiers-killed">DAY 327 OF THE WAR: Two Soldiers Killed in Gaza, Soldiers Body Recovered, Unprepared for the New School Year, Major Operation in the West Bank</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.9%;"></div>
-            <div class="neutral" style="width: 22.0%;"></div>
-            <div class="negative" style="width: 76.1%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://marcschulman.substack.com/p/day-326-of-the-war-hostage-rescued">DAY 326 OF THE WAR: Hostage Rescued From Gaza, Commemoration of Oct 7, Quiet Day on Northern Border</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 56.9%;"></div>
-            <div class="neutral" style="width: 28.2%;"></div>
-            <div class="negative" style="width: 14.9%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://marcschulman.substack.com/p/day-332-of-war-netanyahu-claims-philadelphi">DAY 332 OF WAR: Netanyahu Claims Philadelphi Corridor is Essential to Israels Security, Two Heartrending Funerals, Workers Strike Has Limited Impact, Britain Blocks Arms</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 0.9%;"></div>
-            <div class="neutral" style="width: 23.7%;"></div>
-            <div class="negative" style="width: 75.4%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://marcschulman.substack.com/p/day-326-of-the-war-hostage-rescued">DAY 326 OF THE WAR: Hostage Rescued From Gaza, Commemoration of Oct 7, Quiet Day on Northern Border</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 56.9%;"></div>
-            <div class="neutral" style="width: 28.2%;"></div>
-            <div class="negative" style="width: 14.9%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://marcschulman.substack.com/p/day-337-of-the-war-optimism-of-chance">DAY 337 OF THE WAR: Optimism of Chance of Hostage Deal Fades, West Bank Clashes, Rocket Fire From Lebanon</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 0.8%;"></div>
-            <div class="neutral" style="width: 24.3%;"></div>
-            <div class="negative" style="width: 74.9%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://marcschulman.substack.com/p/day-326-of-the-war-hostage-rescued">DAY 326 OF THE WAR: Hostage Rescued From Gaza, Commemoration of Oct 7, Quiet Day on Northern Border</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 56.9%;"></div>
-            <div class="neutral" style="width: 28.2%;"></div>
-            <div class="negative" style="width: 14.9%;"></div>
-        </div>       
-      </td>
-    </tr>
-
-    <tr>
-      <td><a href="https://www.natesilver.net/p/theres-no-normal-in-this-election">Theres no normal in this election</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 59.2%;"></div>
-            <div class="neutral" style="width: 40.1%;"></div>
-            <div class="negative" style="width: 0.7%;"></div>
-        </div>       
-      </td>
-      <td><a href="https://www.natesilver.net/p/can-kamala-harris-win-in-incumbent">Can Kamala Harris win in Incumbent Mode?</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 1.9%;"></div>
-            <div class="neutral" style="width: 43.3%;"></div>
-            <div class="negative" style="width: 54.8%;"></div>
+            <div class="positive" style="width: 4.6%;"></div>
+            <div class="neutral" style="width: 38.9%;"></div>
+            <div class="negative" style="width: 56.5%;"></div>
         </div>       
       </td>
     </tr>

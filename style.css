@@ -26,7 +26,7 @@ h1 {
 
 .title a {
     text-decoration: none;
-    color: #4a90e2; /* Distinct link color */
+    color: #fff; /* Distinct link color */
 }
 
 .title a:hover {
@@ -230,6 +230,11 @@ tbody tr:hover {
     align-items: center;
     margin: 5px auto;
     max-width: 75%;
+}
+
+.navigation-container a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .link-description {
