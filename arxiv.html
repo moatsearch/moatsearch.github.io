@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArXiv</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 <header class="header">
     <div class="header-left">
-        <a href="index.html">MOAT</a>
+        <a href="{{ url_for('index') }}">MOAT</a>
     </div>
     <div class="header-center">
         <span>ArXiv</span>
@@ -29,380 +29,344 @@
 <tr>
     <td>Mathematics</td>
     <td>Algebraic Geometry  (AG)</td>
-    <td><a href="https://arxiv.org/abs/2409.08028">One-cusped complex hyperbolic 2-manifolds</a></td>
-    <td><a href="https://arxiv.org/abs/1906.03368">Complex structure degenerations and collapsing of Calabi-Yau metrics</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08370">An Algebraic Proof of Hrushovski's Theorem</a></td>
+    <td><a href="https://arxiv.org/abs/2405.03648">Proof of the geometric Langlands conjecture II: Kac-Moody localization and the FLE</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Analysis of PDEs  (AP)</td>
-    <td><a href="https://arxiv.org/abs/2302.13396">Isoperimetric conditions, lower semicontinuity, and existence results for perimeter functionals with measure data</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07820">Homogenisation of vectorial free-discontinuity functionals with cohesive type surface terms</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08720">Equivalent formulations for steady periodic water waves of fixed mean-depth with discontinuous vorticity</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08730">Steady periodic water waves bifurcating for fixed-depth rotational flows with discontinuous vorticity</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Combinatorics  (CO)</td>
-    <td><a href="https://arxiv.org/abs/2312.03563">A note on the chromatic number of the square of a sparse random graph</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07535">Chromatic Ramsey numbers and two-color Tur\'{a}n densities</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08694">On a generalization of a result of Kleitman</a></td>
+    <td><a href="https://arxiv.org/abs/2409.03128">Ruzsa's problem on Bi-Sidon sets</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Dynamical Systems  (DS)</td>
-    <td><a href="https://arxiv.org/abs/2409.07700">Disturbance-Robust Backup Control Barrier Functions: Safety Under Uncertain Dynamics</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07590">Deep Learning for predicting rate-induced tipping</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08870">A laminar chaotic saddle within a turbulent attractor</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08496">Computing Lyapunov Exponents using Weighted Birkhoff Averages</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Group Theory  (GR)</td>
-    <td><a href="https://arxiv.org/abs/2212.12119">Random walks and contracting elements II: Translation length and Quasi-isometric embedding</a></td>
-    <td><a href="https://arxiv.org/abs/2212.12122">Random walks and contracting elements III: Outer space and outer automorphism group</a></td>
+    <td><a href="https://arxiv.org/abs/2401.04028">Blocks whose defect groups are Suzuki $2$-groups</a></td>
+    <td><a href="https://arxiv.org/abs/2310.05734">Morita equivalence classes of $2$-blocks with abelian defect groups of rank $4$</a></td>
 </tr>
 <tr>
     <td></td>
-    <td>Geometric Topology  (GT)</td>
-    <td><a href="https://arxiv.org/abs/2212.12119">Random walks and contracting elements II: Translation length and Quasi-isometric embedding</a></td>
-    <td><a href="https://arxiv.org/abs/2212.12122">Random walks and contracting elements III: Outer space and outer automorphism group</a></td>
+    <td>Information Theory  (IT)</td>
+    <td><a href="https://arxiv.org/abs/2401.05725">Energy-Efficient STAR-RIS Enhanced UAV-Enabled MEC Networks with Bi-Directional Task Offloading</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08579">Secure Offloading in NOMA-Aided Aerial MEC Systems Based on Deep Reinforcement Learning</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Logic  (LO)</td>
-    <td><a href="https://arxiv.org/abs/2409.08243">Reasoning Around Paradox with Grounded Deduction</a></td>
-    <td><a href="https://arxiv.org/abs/2210.05344">From Proof-theoretic Validity to Base-extension Semantics for Intuitionistic Propositional Logic</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08990">Quasivarieties of p-algebras: some new results</a></td>
+    <td><a href="https://arxiv.org/abs/2409.09015">Decidable varieties of p-algebras</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Mathematical Physics  (MP)</td>
-    <td><a href="https://arxiv.org/abs/2409.07657">Relative Dynamics of Vortices in Confined Bose--Einstein Condensates</a></td>
-    <td><a href="https://arxiv.org/abs/2201.04418">Thomas-Fermi profile of a fast rotating Bose-Einstein condensate</a></td>
+    <td><a href="https://arxiv.org/abs/2405.16842">Locality, Correlations, Information, and non-Hermitian Quantum Systems</a></td>
+    <td><a href="https://arxiv.org/abs/2403.19023">Two-sided Lieb-Thirring bounds</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Numerical Analysis  (na)</td>
-    <td><a href="https://arxiv.org/abs/2401.02398">Generating synthetic data for neural operators</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07671">Transformed Physics-Informed Neural Networks for The Convection-Diffusion Equation</a></td>
-</tr>
-<tr>
-    <td></td>
-    <td>Number Theory  (NT)</td>
-    <td><a href="https://arxiv.org/abs/2409.08214">Uniform polynomial bounds on torsion from rational geometric isogeny classes</a></td>
-    <td><a href="https://arxiv.org/abs/2409.01350">Zeta elements for elliptic curves and applications</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08505">Lecture note on inverse problems and reconstruction methods</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08734">Applications of multiscale hierarchical decomposition to blind deconvolution</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Optimization and Control  (OC)</td>
-    <td><a href="https://arxiv.org/abs/2312.07770">On Time-Inconsistency in Mean Field Games</a></td>
-    <td><a href="https://arxiv.org/abs/2409.08235">How can the tragedy of the commons be prevented?: Introducing Linear Quadratic Mixed Mean Field Games</a></td>
-</tr>
-<tr>
-    <td></td>
-    <td>Probability  (PR)</td>
-    <td><a href="https://arxiv.org/abs/2409.06496">Valuation Model of Chinese Convertible Bonds Based on Monte Carlo Simulation</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07477">American option pricing using generalised stochastic hybrid systems</a></td>
+    <td><a href="https://arxiv.org/abs/2304.03886">Convergence Rate Bounds for the Mirror Descent Method: IQCs, Popov Criterion and Bregman Divergence</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08948">A Near-Optimal Algorithm for Convex Simple Bilevel Optimization under Weak Assumptions</a></td>
 </tr>
 <tr>
     <td>Electrical Engineering and Systems Science</td>
     <td>Audio and Speech Processing  (AS)</td>
-    <td><a href="https://arxiv.org/abs/2409.08039">Zero-Shot Sing Voice Conversion: built upon clustering-based phoneme representations</a></td>
-    <td><a href="https://arxiv.org/abs/2312.10741">StyleSinger: Style Transfer for Out-of-Domain Singing Voice Synthesis</a></td>
+    <td><a href="https://arxiv.org/abs/2409.06245">A Two-Stage Band-Split Mamba-2 Network For Music Separation</a></td>
+    <td><a href="https://arxiv.org/abs/2409.06190">Multi-Source Music Generation with Latent Diffusion</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Image and Video Processing  (IV)</td>
-    <td><a href="https://arxiv.org/abs/2409.08130">The JPEG Pleno Learning-based Point Cloud Coding Standard: Serving Man and Machine</a></td>
-    <td><a href="https://arxiv.org/abs/2403.11694">Object Segmentation-Assisted Inter Prediction for Versatile Video Coding</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08772">On the Computation of BD-Rate over a Set of Videos for Fair Assessment of Performance of Learned Video Codecs</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08481">USTC-TD: A Test Dataset and Benchmark for Image and Video Coding in 2020s</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Signal Processing  (SP)</td>
+    <td><a href="https://arxiv.org/abs/2409.07347">The Role of Explainable AI in Revolutionizing Human Health Monitoring</a></td>
     <td><a href="https://arxiv.org/abs/2409.08164">Differences between Two Maximal Principal Strain Rate Calculation Schemes in Traumatic Brain Analysis with in-vivo and in-silico Datasets</a></td>
-    <td><a href="https://arxiv.org/abs/2409.08177">Identification of head impact locations, speeds, and force based on head kinematics</a></td>
 </tr>
 <tr>
     <td>Statistics</td>
+    <td>Applications  (AP)</td>
+    <td><a href="https://arxiv.org/abs/2409.08823">AutoIRT: Calibrating Item Response Theory Models with Automated Machine Learning</a></td>
+    <td><a href="https://arxiv.org/abs/2302.09482">Adoption and implication of the Biased-Annotator Competence Estimation (BACE) model into COVID-19 vaccine Twitter data: Human annotation for latent message features</a></td>
+</tr>
+<tr>
+    <td></td>
     <td>Methodology  (ME)</td>
-    <td><a href="https://arxiv.org/abs/2402.16362">Estimability conditions for complex carryover effects in crossover designs</a></td>
-    <td><a href="https://arxiv.org/abs/2401.15680">How to achieve model-robust inference in stepped wedge trials with model-based methods?</a></td>
+    <td><a href="https://arxiv.org/abs/2409.02331">A parameterization of anisotropic Gaussian fields with penalized complexity priors</a></td>
+    <td><a href="https://arxiv.org/abs/2208.14960">Stationary Kernels and Gaussian Processes on Lie Groups and their Homogeneous Spaces I: the compact case</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Machine Learning  (ML)</td>
-    <td><a href="https://arxiv.org/abs/1811.12852">Optimal Data Driven Resource Allocation under Multi-Armed Bandit Observations</a></td>
-    <td><a href="https://arxiv.org/abs/2409.05181">Sliding-Window Thompson Sampling for Non-Stationary Settings</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08311">Theoretical guarantees in KL for Diffusion Flow Matching</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08861">Adjoint Matching: Fine-tuning Flow and Diffusion Generative Models with Memoryless Stochastic Optimal Control</a></td>
 </tr>
 <tr>
     <td>Astrophysics</td>
     <td>Cosmology and Nongalatic Astrophysics  (CO)</td>
-    <td><a href="https://arxiv.org/abs/2404.02110">Tightening the reins on non-minimal dark sector physics: Interacting Dark Energy with dynamical and non-dynamical equation of state</a></td>
-    <td><a href="https://arxiv.org/abs/2404.18845">Phantom matter: a challenging solution to the cosmological tensions</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08956">Discovery Opportunities with Gravitational Waves -- TASI 2024 Lecture Notes</a></td>
+    <td><a href="https://arxiv.org/abs/2407.09380">Measuring the anisotropies in astrophysical and cosmological gravitational-wave backgrounds with Taiji and LISA networks</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Astrophysics of Galaxies  (GA)</td>
-    <td><a href="https://arxiv.org/abs/2103.15848">Gaseous Dynamical Friction: a Numerical Study of Extended Perturbers</a></td>
-    <td><a href="https://arxiv.org/abs/2405.08870">A calibrated model for N-body dynamical friction acting on supermassive black holes</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08539">NeutralUniverseMachine: How Filaments and Dark Matter Halo Influence the Galaxy Cold Gas Content</a></td>
+    <td><a href="https://arxiv.org/abs/2409.09028">The effect of cosmic web filaments on galaxy evolution</a></td>
 </tr>
 <tr>
     <td></td>
-    <td>High Energy Astrophysical Phenomena  (HE)</td>
-    <td><a href="https://arxiv.org/abs/2409.07511">Initial performance of the Radar Echo Telescope for Cosmic Rays, RET-CR</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07634">ARA-Next: a new DAQ and trigger architecture for the Askaryan Radio Array</a></td>
-</tr>
-<tr>
-    <td></td>
-    <td>Solar and Stellar Astrophysics  (SR)</td>
-    <td><a href="https://arxiv.org/abs/2401.05591">Time Series of Magnetic Field Parameters of Merged MDI and HMI Space-Weather Active Region Patches as Potential Tool for Solar Flare Forecasting</a></td>
-    <td><a href="https://arxiv.org/abs/2409.08124">Magnetic Field Evolution of the Solar Active Region 13664</a></td>
+    <td>Instrumentation and Methods of Astrophysics  (IM)</td>
+    <td><a href="https://arxiv.org/abs/2409.08359">Participatory Science and Machine Learning Applied to Millions of Sources in the Hobby-Eberly Telescope Dark Energy Experiment</a></td>
+    <td><a href="https://arxiv.org/abs/2409.09029">Learning Theory Informed Priors for Bayesian Inference: A Case Study with Early Dark Energy</a></td>
 </tr>
 <tr>
     <td>Condensed Matter</td>
-    <td>Disordered Systems and Neural Networks  (dis-nn)</td>
-    <td><a href="https://arxiv.org/abs/2409.07679">Ratio Divergence Learning Using Target Energy in Restricted Boltzmann Machines: Beyond Kullback--Leibler Divergence Learning</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07708">Dataset-Free Weight-Initialization on Restricted Boltzmann Machine</a></td>
-</tr>
-<tr>
-    <td></td>
     <td>Mesoscale and Nanoscale Physics  (mes-hall)</td>
-    <td><a href="https://arxiv.org/abs/2404.16936">Synchronization-induced violation of thermodynamic uncertainty relations</a></td>
-    <td><a href="https://arxiv.org/abs/2403.06296">Quantum limitation on experimental testing of non-equilibrium fluctuation theorems</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08841">Domain-wall Skyrmion phase of QCD in magnetic field: Gauge field dynamics</a></td>
+    <td><a href="https://arxiv.org/abs/2409.09025">Inverse Spin Hall Effect in Nonequilibrium Dirac Systems Induced by Anomalous Flow Imbalance</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Material Science  (mtrl-sci)</td>
-    <td><a href="https://arxiv.org/abs/2409.07910">Controllable magnetic anisotropy and ferroelasticity in superconducting FeSe monolayer with surface fluorine adsorption</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07740">Engineering Quantum Anomalous Hall Effect in Monolayer Janus MnBi2SexTe4-x</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08716">A Systematic Investigation of PbSe Thermoelectric Material</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08836">Thermoelectrical potential and derivation of Kelvin relation for thermoelectric materials</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Quantum Gas  (quant-gas)</td>
-    <td><a href="https://arxiv.org/abs/2409.07657">Relative Dynamics of Vortices in Confined Bose--Einstein Condensates</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07791">Finite temperature stability of quantized vortex structures in rotating Bose-Einstein condensates via complex Langevin simulation</a></td>
-</tr>
-<tr>
-    <td></td>
-    <td>Soft Condensed Matter  (soft)</td>
-    <td><a href="https://arxiv.org/abs/2406.05479">The Interplay Between Forces, Particle Rearrangements, and Macroscopic Stress Fluctuations in Sheared 2D Granular Media</a></td>
-    <td><a href="https://arxiv.org/abs/2409.08140">Loading-dependent microscale measures control bulk properties in granular material: an experimental test of the Stress-Force-Fabric relation</a></td>
+    <td><a href="https://arxiv.org/abs/2409.09027">Boson sampling with self-generation of squeezing via interaction of photons and atoms</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08973">Hybrid boson sampling</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Statistical Mechanics  (stat-mech)</td>
-    <td><a href="https://arxiv.org/abs/2409.07516">Quantum thermalization of translation-invariant systems at high temperature</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07899">Correlated quantum machines beyond the standard second law</a></td>
+    <td><a href="https://arxiv.org/abs/2305.18244">Accurate Estimation of Diffusion Coefficients and their Uncertainties from Computer Simulation</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08886">PiNNAcLe: Adaptive Learn-On-The-Fly Algorithm for Machine-Learning Potential</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Strongly Correlated Electrons  (str-el)</td>
-    <td><a href="https://arxiv.org/abs/2409.07816">Unveiling the 5$f$ electron hybridization process in UPd$_2$Al$_3$ via ARPES and Time-resolved PES</a></td>
-    <td><a href="https://arxiv.org/abs/2409.08125">Unexpected changes in the band structure within AFM1 state of CeBi</a></td>
-</tr>
-<tr>
-    <td></td>
-    <td>Superconductivity  (supr-con)</td>
-    <td><a href="https://arxiv.org/abs/2409.07721">A deep learning approach to search for superconductors from electronic bands</a></td>
-    <td><a href="https://arxiv.org/abs/2409.08065">AI-accelerated discovery of high critical temperature superconductors</a></td>
+    <td><a href="https://arxiv.org/abs/2408.00691">Subspace-projected multireference covariant density functional theory</a></td>
+    <td><a href="https://arxiv.org/abs/2408.06160">Contextual Subspace Auxiliary-Field Quantum Monte Carlo: Improved bias with reduced quantum resources</a></td>
 </tr>
 <tr>
     <td>Quantum Physics</td>
     <td> </td>
-    <td><a href="https://arxiv.org/abs/2409.07863">Collaboration Encouraging Quantum Secret Sharing Scheme with Seal Property</a></td>
-    <td><a href="https://arxiv.org/abs/2009.13263">A simple practical quantum bit commitment protocol</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08844">Benchmarking the performance of quantum computing software</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08368">LightSABRE: A Lightweight and Enhanced SABRE Algorithm</a></td>
 </tr>
 <tr>
     <td>General Relativity and Quantum Cosmology</td>
     <td> </td>
-    <td><a href="https://arxiv.org/abs/2405.17592">The deceleration parameter in perturbed Bianchi universes with a peculiar-velocity "tilt"</a></td>
-    <td><a href="https://arxiv.org/abs/2408.04938">Cosmic Anisotropy and Bianchi Characterization: Killing vector fields and the implied finding of their metric frame</a></td>
+    <td><a href="https://arxiv.org/abs/2407.09380">Measuring the anisotropies in astrophysical and cosmological gravitational-wave backgrounds with Taiji and LISA networks</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08956">Discovery Opportunities with Gravitational Waves -- TASI 2024 Lecture Notes</a></td>
 </tr>
 <tr>
     <td>High Energy Physics - Experiment</td>
     <td> </td>
-    <td><a href="https://arxiv.org/abs/2404.00201">Angular analysis of $B \to K^* e^+ e^-$ in the low-$q^2$ region with new electron identification at Belle</a></td>
-    <td><a href="https://arxiv.org/abs/2407.15140">Measurement of the $e^+e^-\to K_SK_L$ cross section near the $\phi(1020)$ resonance with the SND detector</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08568">Predictions for the rare kaon decays $K_{S,L} \to \pi^0 \ell^+ \ell^-$ from QCD in the limit of a large number of colours</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08817">The upper limit on the $K^+ \to \pi^0\pi^0\pi^0e^+\nu$ decay</a></td>
 </tr>
 <tr>
     <td>High Energy Physics - Phenomenology</td>
     <td> </td>
-    <td><a href="https://arxiv.org/abs/2404.18845">Phantom matter: a challenging solution to the cosmological tensions</a></td>
-    <td><a href="https://arxiv.org/abs/2404.02110">Tightening the reins on non-minimal dark sector physics: Interacting Dark Energy with dynamical and non-dynamical equation of state</a></td>
+    <td><a href="https://arxiv.org/abs/2407.09325">The $\Lambda_c\to \Lambda\, l^+\nu_\ell$ weak decay including new physics</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08568">Predictions for the rare kaon decays $K_{S,L} \to \pi^0 \ell^+ \ell^-$ from QCD in the limit of a large number of colours</a></td>
 </tr>
 <tr>
     <td>High Energy Physics - Theory</td>
     <td> </td>
-    <td><a href="https://arxiv.org/abs/2405.09407">Strain effects on the electronic properties of a graphene wormhole</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07764">Spin-hydrodynamics of electrons in graphene and thermovortical magnetization</a></td>
+    <td><a href="https://arxiv.org/abs/2305.11280">Complexity = Anything Can Grow Forever in de Sitter</a></td>
+    <td><a href="https://arxiv.org/abs/2401.08571">Generalized holographic complexity of rotating black holes</a></td>
 </tr>
 <tr>
     <td>Mathematical Physics</td>
     <td> </td>
-    <td><a href="https://arxiv.org/abs/2201.04418">Thomas-Fermi profile of a fast rotating Bose-Einstein condensate</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07657">Relative Dynamics of Vortices in Confined Bose--Einstein Condensates</a></td>
+    <td><a href="https://arxiv.org/abs/2403.19023">Two-sided Lieb-Thirring bounds</a></td>
+    <td><a href="https://arxiv.org/abs/2405.16842">Locality, Correlations, Information, and non-Hermitian Quantum Systems</a></td>
 </tr>
 <tr>
     <td>Physics</td>
     <td>Applied Physics  (app-ph)</td>
-    <td><a href="https://arxiv.org/abs/2409.08064">On-demand realization of topological states using Miura-folded metamaterials</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07635">Selective Actuation Enabled Multifunctional Magneto-mechanical Metamaterial for Programming Elastic Wave Propagation</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08836">Thermoelectrical potential and derivation of Kelvin relation for thermoelectric materials</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08716">A Systematic Investigation of PbSe Thermoelectric Material</a></td>
+</tr>
+<tr>
+    <td></td>
+    <td>Atomic Physics  (atom-ph)</td>
+    <td><a href="https://arxiv.org/abs/2407.15443">GRASIAN: Shaping and characterization of the cold hydrogen and deuterium beams for the forthcoming first demonstration of gravitational quantum states of atoms</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08550">Adaptive Robust High-Precision Atomic Gravimetry</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Chemical Physics  (chem-ph)</td>
-    <td><a href="https://arxiv.org/abs/2409.08194">Unifying the description of hydrocarbons and hydrogenated carbon materials with a chemically reactive machine learning interatomic potential</a></td>
-    <td><a href="https://arxiv.org/abs/2408.04497">Schr\"{o}dingerNet: A Universal Neural Network Solver for The Schr\"{o}dinger Equation</a></td>
+    <td><a href="https://arxiv.org/abs/2312.04458">The Generalized Alchemical Integral Transform</a></td>
+    <td><a href="https://arxiv.org/abs/2406.18416">Alchemical insights into approximately quadratic energies of iso-electronic atoms</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Computational Physics  (comp-ph)</td>
-    <td><a href="https://arxiv.org/abs/2406.01487">Optimized effective potential forces with the plane-wave and pseudopotential method</a></td>
-    <td><a href="https://arxiv.org/abs/2408.04497">Schr\"{o}dingerNet: A Universal Neural Network Solver for The Schr\"{o}dinger Equation</a></td>
+    <td><a href="https://arxiv.org/abs/2307.16279">Sampling Error Analysis in Quantum Krylov Subspace Diagonalization</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08816">Efficient Pseudomode Representation and Complexity of Quantum Impurity Models</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Fluid Dynamics  (flu-dyn)</td>
-    <td><a href="https://arxiv.org/abs/2409.07605">Dual scale Residual-Network for turbulent flow sub grid scale resolving: A prior analysis</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07769">Mesh-based Super-Resolution of Fluid Flows with Multiscale Graph Neural Networks</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08477">Integrating Neural Operators with Diffusion Models Improves Spectral Representation in Turbulence Modeling</a></td>
+    <td><a href="https://arxiv.org/abs/2408.17364">Physics-Informed Neural Networks for Transonic Flows around an Airfoil</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Geophysics  (geo-ph)</td>
-    <td><a href="https://arxiv.org/abs/2409.07890">DNN-based workflow for attenuating seismic interference noise and its application to marine towed streamer data from the Northern Viking Graben</a></td>
-    <td><a href="https://arxiv.org/abs/2409.01673">Attenuation of marine seismic interference noise employing a customized U-Net</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08602">Deep learning-based shot-domain seismic deblending</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08603">Using Convolutional Neural Networks for Denoising and Deblending of Marine Seismic Data</a></td>
 </tr>
 <tr>
     <td></td>
-    <td>Plasma Physics  (plasm-ph)</td>
-    <td><a href="https://arxiv.org/abs/2409.08134">Probing the radiation-dominated regime of laser-plasma interaction in multi-beam configurations of petawatt lasers</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07982">Two-plasmon decay instability and 3/2 harmonic generation in inhomogeneous magnetized plasma</a></td>
+    <td>Optics  (optics)</td>
+    <td><a href="https://arxiv.org/abs/2408.05629">Quantum-secure multiparty deep learning</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08633">Improving Analog Neural Network Robustness: A Noise-Agnostic Approach with Explainable Regularizations</a></td>
 </tr>
 <tr>
-    <td>Quantitative Finance</td>
-    <td>Computational Finance  (CP)</td>
-    <td><a href="https://arxiv.org/abs/2409.07486">MarS: a Financial Market Simulation Engine Powered by Generative Foundation Model</a></td>
-    <td><a href="https://arxiv.org/abs/2407.14573">Trading Devil Final: Backdoor attack via Stock market and Bayesian Optimization</a></td>
+    <td></td>
+    <td>Physics and Society  (soc-ph)</td>
+    <td><a href="https://arxiv.org/abs/2409.08349">Scientific and technological knowledge grows linearly over time</a></td>
+    <td><a href="https://arxiv.org/abs/2205.12719">Social network heterogeneity benefits individuals at the expense of groups in the creation of innovation</a></td>
+</tr>
+<tr>
+    <td>Quantitative Biology</td>
+    <td>Neurons and Cognition  (NC)</td>
+    <td><a href="https://arxiv.org/abs/2404.03708">Dendrites endow artificial neural networks with accurate, robust and parameter-efficient learning</a></td>
+    <td><a href="https://arxiv.org/abs/2309.12927">Emergent mechanisms for long timescales depend on training curriculum and affect performance in memory tasks</a></td>
+</tr>
+<tr>
+    <td></td>
+    <td>Quantitative Methods  (QM)</td>
+    <td><a href="https://arxiv.org/abs/2409.08331">Digital Volumetric Biopsy Cores Improve Gleason Grading of Prostate Cancer Using Deep Learning</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08338">Impact of Stain Variation and Color Normalization for Prognostic Predictions in Pathology</a></td>
 </tr>
 <tr>
     <td>Computer Science</td>
     <td>Artificial Intelligence  (AI)</td>
-    <td><a href="https://arxiv.org/abs/2409.06741">Generative AI for Requirements Engineering: A Systematic Literature Review</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07192">How Mature is Requirements Engineering for AI-based Systems? A Systematic Mapping Study on Practices, Challenges, and Future Research Directions</a></td>
-</tr>
-<tr>
-    <td></td>
-    <td>Computational Complexity  (CC)</td>
-    <td><a href="https://arxiv.org/abs/2409.07632">Learning Robust Observable to Address Noise in Quantum Machine Learning</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07626">Generalization Error Bound for Quantum Machine Learning in NISQ Era -- A Survey</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08692">B4: Towards Optimal Assessment of Plausible Code Solutions with Plausible Tests</a></td>
+    <td><a href="https://arxiv.org/abs/2408.13745">DOCE: Finding the Sweet Spot for Execution-Based Code Generation</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Computation and Language  (CL)</td>
-    <td><a href="https://arxiv.org/abs/2406.06852">A Survey of Backdoor Attacks and Defenses on Large Language Models: Implications for Security Measures</a></td>
-    <td><a href="https://arxiv.org/abs/2409.06857">What is the Role of Small Models in the LLM Era: A Survey</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08692">B4: Towards Optimal Assessment of Plausible Code Solutions with Plausible Tests</a></td>
+    <td><a href="https://arxiv.org/abs/2408.13745">DOCE: Finding the Sweet Spot for Execution-Based Code Generation</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Cryptography and Security  (CR)</td>
-    <td><a href="https://arxiv.org/abs/2409.08161">A Study on Asynchronous Vote-based Blockchains</a></td>
-    <td><a href="https://arxiv.org/abs/2403.03655">Kronos: A Secure and Generic Sharding Blockchain Consensus with Optimized Overhead</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08521">Optimal Classification-based Anomaly Detection with Neural Networks: Theory and Practice</a></td>
+    <td><a href="https://arxiv.org/abs/2407.08838">Deep Learning for Network Anomaly Detection under Data Contamination: Evaluating Robustness and Mitigating Performance Degradation</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Computer Vision and Pattern Recognition  (CV)</td>
-    <td><a href="https://arxiv.org/abs/2308.16819">BTSeg: Barlow Twins Regularization for Domain Adaptation in Semantic Segmentation</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07683">Open-Vocabulary Remote Sensing Image Semantic Segmentation</a></td>
+    <td><a href="https://arxiv.org/abs/2407.12632">CerberusDet: Unified Multi-Dataset Object Detection</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08513">Mamba-YOLO-World: Marrying YOLO-World with Mamba for Open-Vocabulary Detection</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Computer and Society  (CY)</td>
-    <td><a href="https://arxiv.org/abs/2409.07878">Mapping Technical Safety Research at AI Companies: A literature review and incentives analysis</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07473">Ethical AI Governance: Methods for Evaluating Trustworthy AI</a></td>
-</tr>
-<tr>
-    <td></td>
-    <td>Distributed, Parallel and Cluster Computing  (DC)</td>
-    <td><a href="https://arxiv.org/abs/2409.07734">DFDG: Data-Free Dual-Generator Adversarial Distillation for One-Shot Federated Learning</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07631">HERL: Tiered Federated Learning with Adaptive Homomorphic Encryption using Reinforcement Learning</a></td>
-</tr>
-<tr>
-    <td></td>
-    <td>Emerging Technologies  (ET)</td>
-    <td><a href="https://arxiv.org/abs/2311.16190">Q-Pilot: Field Programmable Qubit Array Compilation with Flying Ancillas</a></td>
-    <td><a href="https://arxiv.org/abs/2402.00478">Lightcone Bounds for Quantum Circuit Mapping via Uncomplexity</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08907">Affective Computing Has Changed: The Foundation Model Disruption</a></td>
+    <td><a href="https://arxiv.org/abs/2402.01662">Generative Ghosts: Anticipating Benefits and Risks of AI Afterlives</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Graphics  (GR)</td>
-    <td><a href="https://arxiv.org/abs/2409.08270">FlashSplat: 2D to 3D Gaussian Splatting Segmentation Solved Optimally</a></td>
-    <td><a href="https://arxiv.org/abs/2406.18544">GS-ROR: 3D Gaussian Splatting for Reflective Object Relighting via SDF Priors</a></td>
+    <td><a href="https://arxiv.org/abs/2405.19331">NPGA: Neural Parametric Gaussian Avatars</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08353">Robust Dual Gaussian Splatting for Immersive Human-centric Volumetric Videos</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Computer Science and Game Theory  (GT)</td>
-    <td><a href="https://arxiv.org/abs/2409.07719">Static Pricing for Single Sample Multi-unit Prophet Inequalities</a></td>
-    <td><a href="https://arxiv.org/abs/2409.08241">Communication Separations for Truthful Auctions: Breaking the Two-Player Barrier</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08491">The common revenue allocation based on modified Shapley value and DEA cross-efficiency</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08502">Common revenue allocation in DMUs with two stages based on DEA cross-efficiency and cooperative game</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Human-Computer Interaction  (HC)</td>
-    <td><a href="https://arxiv.org/abs/2409.08175">Co-badge: An Activity for Collaborative Engagement with Data Visualization Design Concepts</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07465">Complexity as Design Material</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08622">Policy Prototyping for LLMs: Pluralistic Alignment via Interactive and Collaborative Policymaking</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08960">Improving governance outcomes through AI documentation: Bridging theory and practice</a></td>
+</tr>
+<tr>
+    <td></td>
+    <td>Information Retrieval  (IR)</td>
+    <td><a href="https://arxiv.org/abs/2409.06096">Latent Diffusion Bridges for Unsupervised Musical Audio Timbre Transfer</a></td>
+    <td><a href="https://arxiv.org/abs/2409.05462">Federated Transfer Learning Based Cooperative Wideband Spectrum Sensing with Model Pruning</a></td>
+</tr>
+<tr>
+    <td></td>
+    <td>Information Theory  (IT)</td>
+    <td><a href="https://arxiv.org/abs/2409.08579">Secure Offloading in NOMA-Aided Aerial MEC Systems Based on Deep Reinforcement Learning</a></td>
+    <td><a href="https://arxiv.org/abs/2401.05725">Energy-Efficient STAR-RIS Enhanced UAV-Enabled MEC Networks with Bi-Directional Task Offloading</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Machine Learning  (LG)</td>
-    <td><a href="https://arxiv.org/abs/2409.08012">Learning Causally Invariant Reward Functions from Diverse Demonstrations</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07569">A Survey of Inverse Constrained Reinforcement Learning: Definitions, Progress and Challenges</a></td>
-</tr>
-<tr>
-    <td></td>
-    <td>Multimedia  (MM)</td>
-    <td><a href="https://arxiv.org/abs/2409.08270">FlashSplat: 2D to 3D Gaussian Splatting Segmentation Solved Optimally</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07759">SwinGS: Sliding Window Gaussian Splatting for Volumetric Video Streaming with Arbitrary Length</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08580">Molecular Graph Representation Learning via Structural Similarity Information</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08676">Redesigning graph filter-based GNNs to relax the homophily assumption</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Numerical Analysis  (na)</td>
-    <td><a href="https://arxiv.org/abs/2401.02398">Generating synthetic data for neural operators</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07671">Transformed Physics-Informed Neural Networks for The Convection-Diffusion Equation</a></td>
-</tr>
-<tr>
-    <td></td>
-    <td>Neural and Evolutionary Computing  (NE)</td>
-    <td><a href="https://arxiv.org/abs/2409.07776">Training Spiking Neural Networks via Augmented Direct Feedback Alignment</a></td>
-    <td><a href="https://arxiv.org/abs/2409.01230">CoLaNET -- A Spiking Neural Network with Columnar Layered Architecture for Classification</a></td>
-</tr>
-<tr>
-    <td></td>
-    <td>Networking and Internet Architecture  (NE)</td>
-    <td><a href="https://arxiv.org/abs/2409.01230">CoLaNET -- A Spiking Neural Network with Columnar Layered Architecture for Classification</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07776">Training Spiking Neural Networks via Augmented Direct Feedback Alignment</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08505">Lecture note on inverse problems and reconstruction methods</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08734">Applications of multiscale hierarchical decomposition to blind deconvolution</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Robotics  (RO)</td>
-    <td><a href="https://arxiv.org/abs/2403.18209">Long and Short-Term Constraints Driven Safe Reinforcement Learning for Autonomous Driving</a></td>
-    <td><a href="https://arxiv.org/abs/2403.00564">EfficientZero V2: Mastering Discrete and Continuous Control with Limited Data</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08904">AnyBipe: An End-to-End Framework for Training and Deploying Bipedal Robots Guided by Large Language Models</a></td>
+    <td><a href="https://arxiv.org/abs/2311.15649">RoboGPT: an intelligent agent of making embodied long-term decisions for daily instruction tasks</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Sound  (SD)</td>
-    <td><a href="https://arxiv.org/abs/2312.10741">StyleSinger: Style Transfer for Out-of-Domain Singing Voice Synthesis</a></td>
-    <td><a href="https://arxiv.org/abs/2409.08039">Zero-Shot Sing Voice Conversion: built upon clustering-based phoneme representations</a></td>
+    <td><a href="https://arxiv.org/abs/2409.06245">A Two-Stage Band-Split Mamba-2 Network For Music Separation</a></td>
+    <td><a href="https://arxiv.org/abs/2409.06190">Multi-Source Music Generation with Latent Diffusion</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Software Engineering  (SE)</td>
-    <td><a href="https://arxiv.org/abs/2409.07774">ROCAS: Root Cause Analysis of Autonomous Driving Accidents via Cyber-Physical Co-mutation</a></td>
-    <td><a href="https://arxiv.org/abs/2409.08081">SoVAR: Building Generalizable Scenarios from Accident Reports for Autonomous Driving Testing</a></td>
+    <td><a href="https://arxiv.org/abs/2409.09030">Agents in Software Engineering: Survey, Landscape, and Vision</a></td>
+    <td><a href="https://arxiv.org/abs/2408.04667">LLM Stability: A detailed analysis with some surprises</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Social and Information Networks  (SI)</td>
-    <td><a href="https://arxiv.org/abs/2409.07720">Keeping it Authentic: The Social Footprint of the Trolls Network</a></td>
-    <td><a href="https://arxiv.org/abs/2409.07684">Modeling Information Narrative Detection and Evolution on Telegram during the Russia-Ukraine War</a></td>
+    <td><a href="https://arxiv.org/abs/2310.08821">Is Fact-Checking Politically Neutral? Asymmetries in How U.S. Fact-Checking Organizations Pick Up False Statements Mentioning Political Elites</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08781">Community-based fact-checking reduces the spread of misleading posts on social media</a></td>
 </tr>
 <tr>
     <td></td>
     <td>Systems and Control  (SY)</td>
-    <td><a href="https://arxiv.org/abs/2110.15600">Data Driven based Dynamic Correction Prediction Model for NOx Emission of Coal Fired Boiler</a></td>
-    <td><a href="https://arxiv.org/abs/2108.01240">Dynamic Prediction Model for NOx Emission of SCR System Based on Hybrid Data-driven Algorithms</a></td>
+    <td><a href="https://arxiv.org/abs/2312.12267">Optimal Power Flow Pursuit via Feedback-based Safe Gradient Flow</a></td>
+    <td><a href="https://arxiv.org/abs/2409.08411">Social Equity Based Optimal Power Flow Framework to Hedge Against Price Events</a></td>
 </tr>
   </tbody>
 </table>
