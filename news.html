@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 <header class="header">
     <div class="header-left">
-        <a href="index.html">MOAT</a>
+        <a href="{{ url_for('index') }}">MOAT</a>
     </div>
     <div class="header-center">
         <span>News</span>
@@ -72,6 +72,27 @@
     </tr>
 
     <tr>
+      <td>Slow Boring</td>
+      <td><a href="https://www.slowboring.com/p/concepts-of-a-plan">Concepts of a plan</a></td>
+      <td>
+        <div class="sentiment-bar">
+            <div class="positive" style="width: 91.1%;"></div>
+            <div class="neutral" style="width: 8.6%;"></div>
+            <div class="negative" style="width: 0.3%;"></div>
+        </div>       
+      </td>
+      <td>Restoration, with Ayaan Hirsi Ali</td>
+      <td><a href="https://www.restorationbulletin.com/p/abc-presidential-debate-part-ii">ABC Presidential Debate: Part II</a></td>
+      <td>
+        <div class="sentiment-bar">
+            <div class="positive" style="width: 2.8%;"></div>
+            <div class="neutral" style="width: 49.1%;"></div>
+            <div class="negative" style="width: 48.1%;"></div>
+        </div>       
+      </td>
+    </tr>
+
+    <tr>
       <td>Joel Bowman - Notes from the End of the World</td>
       <td><a href="https://joelbowman.substack.com/p/a-pox-on-roses-too-ee5">A Pox on Roses, Too</a></td>
       <td>
@@ -94,21 +115,21 @@
 
     <tr>
       <td>Tel Aviv Diary</td>
+      <td><a href="https://marcschulman.substack.com/p/day-327-of-the-war-two-soldiers-killed">DAY 327 OF THE WAR: Two Soldiers Killed in Gaza, Soldiers Body Recovered, Unprepared for the New School Year, Major Operation in the West Bank</a></td>
+      <td>
+        <div class="sentiment-bar">
+            <div class="positive" style="width: 1.3%;"></div>
+            <div class="neutral" style="width: 20.1%;"></div>
+            <div class="negative" style="width: 78.6%;"></div>
+        </div>       
+      </td>
+      <td>Tel Aviv Diary</td>
       <td><a href="https://marcschulman.substack.com/p/day-326-of-the-war-hostage-rescued">DAY 326 OF THE WAR: Hostage Rescued From Gaza, Commemoration of Oct 7, Quiet Day on Northern Border</a></td>
       <td>
         <div class="sentiment-bar">
             <div class="positive" style="width: 44.4%;"></div>
             <div class="neutral" style="width: 49.1%;"></div>
             <div class="negative" style="width: 6.5%;"></div>
-        </div>       
-      </td>
-      <td>Tel Aviv Diary</td>
-      <td><a href="https://marcschulman.substack.com/p/day-321-of-the-war-soldier-killed">DAY 321 OF THE WAR: Soldier Killed In Gaza, Over 46,000 Acres Burned in North, Head of GSS Sounds the Alarm, Fake News Spreading, Hostage Family at DNC</a></td>
-      <td>
-        <div class="sentiment-bar">
-            <div class="positive" style="width: 0.6%;"></div>
-            <div class="neutral" style="width: 17.2%;"></div>
-            <div class="negative" style="width: 82.2%;"></div>
         </div>       
       </td>
     </tr>
